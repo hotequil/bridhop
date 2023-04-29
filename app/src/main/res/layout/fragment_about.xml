@@ -23,5 +23,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="16dp"
+            android:id="@+id/about_more_button"
             android:text="@string/about_more" />
 </androidx.constraintlayout.widget.ConstraintLayout>

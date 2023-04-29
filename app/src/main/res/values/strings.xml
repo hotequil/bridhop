@@ -5,4 +5,9 @@
     <string name="title_about">About</string>
     <string name="partner_name">FIAP</string>
     <string name="app_title">Bridhop made with FIAP</string>
+    <string name="schneider_weisse_tap_7_name">Tap 7 - Schneider Weisse</string>
+    <string name="schornstein_imperial_ipa_name">Imperial IPA - Schornstein</string>
+    <string name="bodebrown_neipa_name">NEIPA - Bodebrown</string>
+    <string name="bodebrown_imperial_ipa_name">Imperial IPA - Bodebrown</string>
+    <string name="about_more">More about</string>
 </resources>

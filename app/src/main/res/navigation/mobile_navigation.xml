@@ -18,6 +18,12 @@
         tools:layout="@layout/fragment_products" />
 
     <fragment
+        android:id="@+id/navigation_user"
+        android:name="com.bridhop.ui.user.UserFragment"
+        android:label="@string/title_user"
+        tools:layout="@layout/fragment_user" />
+
+    <fragment
         android:id="@+id/navigation_about"
         android:name="com.bridhop.ui.about.AboutFragment"
         android:label="@string/title_about"

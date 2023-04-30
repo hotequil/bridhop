@@ -11,4 +11,9 @@
     <string name="bodebrown_neipa_name">NEIPA - Bodebrown</string>
     <string name="bodebrown_imperial_ipa_name">Imperial IPA - Bodebrown</string>
     <string name="about_more">More about</string>
+    <string name="get_user_image">Get user image</string>
+    <string name="back">Back</string>
+    <string name="github_text">Hotequil (GitHub)</string>
+    <string name="discord_text">Hotequil (Discord)</string>
+    <string name="text_image">Imagem de Hotequil</string>
 </resources>

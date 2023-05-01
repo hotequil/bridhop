@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp"
+    android:paddingHorizontal="24dp"
     tools:context=".ui.home.HomeFragment">
 
-    <ImageView android:layout_width="124dp"
-               android:layout_height="124dp"
+    <ImageView android:layout_width="96dp"
+               android:layout_height="96dp"
                app:layout_constraintLeft_toLeftOf="parent"
                app:layout_constraintRight_toRightOf="parent"
                app:layout_constraintTop_toTopOf="parent"
@@ -25,12 +25,13 @@
               android:text="@string/app_title"
               android:id="@+id/title_page"
               android:textAlignment="center"
-              android:textSize="32sp"/>
+              android:textSize="24sp"/>
 
     <TableLayout android:layout_width="match_parent"
                  android:layout_height="wrap_content"
                  app:layout_constraintTop_toBottomOf="@id/title_page"
                  android:layout_marginTop="16dp"
+                 android:id="@+id/actions"
                  app:layout_constraintStart_toStartOf="parent"
                  app:layout_constraintEnd_toEndOf="parent"
                  android:stretchColumns="0, 1">
@@ -83,4 +84,12 @@
                     tools:ignore="ButtonStyle" />
         </TableRow>
     </TableLayout>
+
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/animations"
+            android:text="@string/animations"
+            app:layout_constraintTop_toBottomOf="@id/actions"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

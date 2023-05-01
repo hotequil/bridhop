@@ -23,4 +23,6 @@
     <string name="audio">Audio</string>
     <string name="video">Video</string>
     <string name="play">Play</string>
+    <string name="animations">Animations</string>
+    <string name="reset">Reset</string>
 </resources>

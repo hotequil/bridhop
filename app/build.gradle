@@ -14,8 +14,8 @@ android {
         targetSdk 33
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "MAPS_API_KEY", "\"AIzaSyDVff6FC6jjSlJiS3xY-rBWJmOA7CWMhQU\""
     }
 
     buildTypes {

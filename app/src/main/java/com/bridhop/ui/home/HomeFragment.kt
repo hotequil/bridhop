@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
+import com.bridhop.AudioActivity
 import com.bridhop.LocationActivity
 import com.bridhop.MapsActivity
 import com.bridhop.R
@@ -24,6 +25,7 @@ class HomeFragment : Fragment() {
         val locationButton = view.findViewById<Button>(R.id.location)
         val goRoutesButton = view.findViewById<Button>(R.id.go_routes)
         val webViewButton = view.findViewById<Button>(R.id.web_view)
+        val audioButton = view.findViewById<Button>(R.id.audio)
 
         seeMapsButton.setOnClickListener{
              val intent = Intent(view.context, MapsActivity::class.java)
@@ -45,6 +47,12 @@ class HomeFragment : Fragment() {
 
         webViewButton.setOnClickListener{
             val intent = Intent(view.context, WebViewActivity::class.java)
+
+            startActivity(intent)
+        }
+
+        audioButton.setOnClickListener{
+            val intent = Intent(view.context, AudioActivity::class.java)
 
             startActivity(intent)
         }

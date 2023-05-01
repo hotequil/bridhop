@@ -20,4 +20,7 @@
     <string name="location">Location</string>
     <string name="go_routes">Go routes</string>
     <string name="web_view">WebView</string>
+    <string name="audio">Audio</string>
+    <string name="video">Video</string>
+    <string name="play">Play</string>
 </resources>

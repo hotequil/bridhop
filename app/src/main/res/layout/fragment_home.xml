@@ -66,5 +66,21 @@
                     android:text="@string/web_view"
                     tools:ignore="ButtonStyle" />
         </TableRow>
+
+        <TableRow tools:ignore="UselessParent">
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:id="@+id/audio"
+                    android:text="@string/audio"
+                    tools:ignore="ButtonStyle" />
+
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:id="@+id/video"
+                    android:text="@string/video"
+                    tools:ignore="ButtonStyle" />
+        </TableRow>
     </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

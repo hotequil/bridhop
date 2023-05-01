@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
+import com.bridhop.LocationActivity
 import com.bridhop.MapsActivity
 import com.bridhop.R
 
@@ -18,11 +19,18 @@ class HomeFragment : Fragment() {
     ): View {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
         val seeMapsButton = view.findViewById<Button>(R.id.see_maps)
+        val locationButton = view.findViewById<Button>(R.id.location)
 
         seeMapsButton.setOnClickListener{
              val intent = Intent(view.context, MapsActivity::class.java)
 
              startActivity(intent)
+        }
+
+        locationButton.setOnClickListener{
+            val intent = Intent(view.context, LocationActivity::class.java)
+
+            startActivity(intent)
         }
 
         return view

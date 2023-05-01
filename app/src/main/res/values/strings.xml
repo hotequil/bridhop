@@ -19,4 +19,5 @@
     <string name="see_maps">See maps</string>
     <string name="location">Location</string>
     <string name="go_routes">Go routes</string>
+    <string name="web_view">WebView</string>
 </resources>

@@ -11,6 +11,7 @@ import com.bridhop.LocationActivity
 import com.bridhop.MapsActivity
 import com.bridhop.R
 import com.bridhop.RoutesActivity
+import com.bridhop.WebViewActivity
 
 class HomeFragment : Fragment() {
     override fun onCreateView(
@@ -22,6 +23,7 @@ class HomeFragment : Fragment() {
         val seeMapsButton = view.findViewById<Button>(R.id.see_maps)
         val locationButton = view.findViewById<Button>(R.id.location)
         val goRoutesButton = view.findViewById<Button>(R.id.go_routes)
+        val webViewButton = view.findViewById<Button>(R.id.web_view)
 
         seeMapsButton.setOnClickListener{
              val intent = Intent(view.context, MapsActivity::class.java)
@@ -37,6 +39,12 @@ class HomeFragment : Fragment() {
 
         goRoutesButton.setOnClickListener{
             val intent = Intent(view.context, RoutesActivity::class.java)
+
+            startActivity(intent)
+        }
+
+        webViewButton.setOnClickListener{
+            val intent = Intent(view.context, WebViewActivity::class.java)
 
             startActivity(intent)
         }

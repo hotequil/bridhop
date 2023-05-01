@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import com.bridhop.LocationActivity
 import com.bridhop.MapsActivity
 import com.bridhop.R
+import com.bridhop.RoutesActivity
 
 class HomeFragment : Fragment() {
     override fun onCreateView(
@@ -20,6 +21,7 @@ class HomeFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
         val seeMapsButton = view.findViewById<Button>(R.id.see_maps)
         val locationButton = view.findViewById<Button>(R.id.location)
+        val goRoutesButton = view.findViewById<Button>(R.id.go_routes)
 
         seeMapsButton.setOnClickListener{
              val intent = Intent(view.context, MapsActivity::class.java)
@@ -29,6 +31,12 @@ class HomeFragment : Fragment() {
 
         locationButton.setOnClickListener{
             val intent = Intent(view.context, LocationActivity::class.java)
+
+            startActivity(intent)
+        }
+
+        goRoutesButton.setOnClickListener{
+            val intent = Intent(view.context, RoutesActivity::class.java)
 
             startActivity(intent)
         }

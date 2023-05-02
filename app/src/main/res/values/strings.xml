@@ -25,4 +25,7 @@
     <string name="play">Play</string>
     <string name="animations">Animations</string>
     <string name="reset">Reset</string>
+    <string name="cep">CEP</string>
+    <string name="fill_cep">Fill your CEP</string>
+    <string name="get_address">Get address</string>
 </resources>

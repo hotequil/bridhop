@@ -9,6 +9,7 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.bridhop.AnimationsActivity
 import com.bridhop.AudioActivity
+import com.bridhop.CepActivity
 import com.bridhop.LocationActivity
 import com.bridhop.MapsActivity
 import com.bridhop.R
@@ -30,6 +31,7 @@ class HomeFragment : Fragment() {
         val audioButton = view.findViewById<Button>(R.id.audio)
         val videoButton = view.findViewById<Button>(R.id.video)
         val animationsButton = view.findViewById<Button>(R.id.animations)
+        val cepButton = view.findViewById<Button>(R.id.cep)
 
         seeMapsButton.setOnClickListener{
              val intent = Intent(view.context, MapsActivity::class.java)
@@ -69,6 +71,12 @@ class HomeFragment : Fragment() {
 
         animationsButton.setOnClickListener{
             val intent = Intent(view.context, AnimationsActivity::class.java)
+
+            startActivity(intent)
+        }
+
+        cepButton.setOnClickListener{
+            val intent = Intent(view.context, CepActivity::class.java)
 
             startActivity(intent)
         }

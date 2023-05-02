@@ -19,6 +19,9 @@
         android:theme="@style/Theme.Bridhop"
         tools:targetApi="31">
         <activity
+            android:name=".CepActivity"
+            android:exported="false" />
+        <activity
             android:name=".AnimationsActivity"
             android:exported="false" />
         <activity

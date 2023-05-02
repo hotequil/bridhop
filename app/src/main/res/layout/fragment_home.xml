@@ -31,7 +31,6 @@
                  android:layout_height="wrap_content"
                  app:layout_constraintTop_toBottomOf="@id/title_page"
                  android:layout_marginTop="16dp"
-                 android:id="@+id/actions"
                  app:layout_constraintStart_toStartOf="parent"
                  app:layout_constraintEnd_toEndOf="parent"
                  android:stretchColumns="0, 1">
@@ -83,13 +82,21 @@
                     android:text="@string/video"
                     tools:ignore="ButtonStyle" />
         </TableRow>
-    </TableLayout>
 
-    <Button android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/animations"
-            android:text="@string/animations"
-            app:layout_constraintTop_toBottomOf="@id/actions"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+        <TableRow>
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:id="@+id/animations"
+                    android:text="@string/animations"
+                    tools:ignore="ButtonStyle" />
+
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:id="@+id/cep"
+                    android:text="@string/cep"
+                    tools:ignore="ButtonStyle" />
+        </TableRow>
+    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

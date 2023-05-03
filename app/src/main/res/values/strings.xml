@@ -28,4 +28,8 @@
     <string name="cep">CEP</string>
     <string name="fill_cep">Fill your CEP</string>
     <string name="get_address">Get address</string>
+    <string name="generate_notification">Generate notification</string>
+    <string name="notifications">Notifications</string>
+    <string name="channel_name">Local notifications (name)</string>
+    <string name="channel_description">Local notifications (description)</string>
 </resources>

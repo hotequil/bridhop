@@ -33,6 +33,7 @@
                  android:layout_marginTop="16dp"
                  app:layout_constraintStart_toStartOf="parent"
                  app:layout_constraintEnd_toEndOf="parent"
+                 android:id="@+id/actions"
                  android:stretchColumns="0, 1">
         <TableRow tools:ignore="UselessParent">
             <Button android:layout_width="wrap_content"
@@ -99,4 +100,12 @@
                     tools:ignore="ButtonStyle" />
         </TableRow>
     </TableLayout>
+
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/actions"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/notifications"
+            android:text="@string/notifications" />
 </androidx.constraintlayout.widget.ConstraintLayout>

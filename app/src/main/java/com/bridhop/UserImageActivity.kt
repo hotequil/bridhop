@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import androidx.activity.ComponentActivity
-import com.bridhop.ui.user.UserFragment
 import com.bumptech.glide.Glide
 
 class UserImageActivity : ComponentActivity() {
@@ -16,7 +15,7 @@ class UserImageActivity : ComponentActivity() {
         val backButton = findViewById<Button>(R.id.back)
 
         backButton.setOnClickListener{
-            val intent = Intent(this, UserFragment::class.java)
+            val intent = Intent(this, MainActivity::class.java)
 
             startActivity(intent)
         }
